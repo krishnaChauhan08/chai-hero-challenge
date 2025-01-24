@@ -12,57 +12,108 @@
 }
 
 body {
-  font-family: 'Inter',sans-serif;
-  height:100vh;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+.dark{
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+#darkModeToggle{
+  margin-top: 10%;
+  margin-left:1340px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9ca3af; 
+  background-color: var(--primary-blue-dark);
+  color: white;
 }
 
 .hero {
-      
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-grid {
+  display: flex;
+  gap: 50px;
 }
 
 .content-col h1 {
+  margin: 0;
+  font-size: 60
 }
 
 .content-col p {
+  font-size: 18px;
 }
 
 .cta-group {
+  display: flex;
+  gap: 15px;
 }
 
 .sr-only {
+  display: none;
 }
 
 .input-wrapper {
+  border-radius: 5px;
+  border: 1px solid #9ca3af;
+  overflow: hidden;
 }
 
-input[type='text'] {
+input[type="text"] {
+  padding: 10px 9px 10px 9px;
+  outline: none;
+  border: none;
 }
 
 .demo-button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9ca3af; 
+  background-color: var(--primary-blue);
+  color: white;
+  transition: all 0.2s ease;
 }
 
 .demo-button:hover {
+  background-color: var(--primary-blue-dark);
 }
 
 .brands-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .trusted-by {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .brand-logos {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .brand-logo {
+  width: 70px;
 }
 
-.image-col {
+.image-col {  
 }
 
 .hero-image {
+  width: 480px;
+  border-radius: 15px;
 }
 
 @media (min-width: 640px) {
@@ -81,7 +132,7 @@ input[type='text'] {
   .input-wrapper {
   }
 
-  input[type='text'] {
+  input[type="text"] {
   }
 }
 
@@ -117,6 +168,7 @@ input[type='text'] {
 }
 
 .dark-mode-toggle {
+  
 }
 
 .dark-mode-toggle:hover {
@@ -131,8 +183,8 @@ body.dark {
 .dark-mode-toggle:hover {
 }
 
-input[type='text'].dark {
+input[type="text"].dark {
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
 }
